@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hefuturehasbeenlooted.com</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">ACC.LOOTED</a>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="home.html" class="navbar-link">HOME</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">ABOUT</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="portfolio.html" class="navbar-link active">PORTFOLIO</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="appointment.html" class="navbar-link">APPOINTMENT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Content -->
+    <main class="main-content">
+        <!-- Portfolio Header -->
+        <section class="portfolio-header">
+            <div class="content-container">
+                <h1 class="portfolio-title">MY PORTFOLIO</h1>
+                <p class="portfolio-subtitle">
+                    Welcome to my portfolio. Here you'll find a selection of my work.<br>
+                    Explore my projects to learn more about what I do.
+                </p>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-gallery">
+            <div class="content-container">
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="cyber">
+                        <div class="portfolio-image">
+                            <img src="image/cyber/cyber2.jpg" alt="Cyber Sigilism" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="overlay-title">Cyber Sigilism</h3>
+                                    <p class="overlay-description">Click to view gallery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="blackwork">
+                        <div class="portfolio-image">
+                            <img src="image/black/black3.jpg" alt="BlackWork" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="overlay-title">BlackWork</h3>
+                                    <p class="overlay-description">Click to view gallery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="typography">
+                        <div class="portfolio-image">
+                            <img src="image/typo/typo2.jpg" alt="Typography" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="overlay-title">Typography</h3>
+                                    <p class="overlay-description">Click to view gallery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="whatever">
+                        <div class="portfolio-image">
+                            <img src="image/what/what4.jpg"alt="Whatever is this" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="overlay-title">Whatever is this</h3>
+                                    <p class="overlay-description">Click to view gallery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="content-container">
+                <p class="cta-text">Be apart for something cool :)</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Gallery -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Gallery</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div class="gallery-container">
+                    <button class="gallery-nav gallery-prev" id="galleryPrev">&#8249;</button>
+                    <div class="gallery-main">
+                        <img src="/placeholder.svg" alt="" class="gallery-main-image" id="galleryMainImage">
+                        <div class="gallery-counter">
+                            <span id="currentImage">1</span> / <span id="totalImages">1</span>
+                        </div>
+                    </div>
+                    <button class="gallery-nav gallery-next" id="galleryNext">&#8250;</button>
+                </div>
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <!-- Thumbnails will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <span class="social-label">Instagram</span>
+                <a href="https://www.instagram.com/acc.looted?igsh=OWNkOWo0Z25yNGJq" class="social-link">@acc_looted</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

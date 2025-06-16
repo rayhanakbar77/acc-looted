@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hefuturehasbeenlooted.com - Appointment</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">ACC.LOOTED</a>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="home.html" class="navbar-link">HOME</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">ABOUT</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="portofolio.html" class="navbar-link">PORTFOLIO</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="appointment.html" class="navbar-link active">APPOINTMENT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Appointment Content -->
+    <main class="main-content">
+        <!-- Appointment Header -->
+        <section class="appointment-header">
+            <div class="content-container">
+                <h1 class="appointment-title">BOOK APPOINTMENT</h1>
+                <p class="appointment-subtitle">
+                    Ready to get your next tattoo? Fill out the form below and I'll get back to you soon.<br>
+                    Let's create something amazing together.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Cards -->
+        <section class="contact-cards">
+            <div class="content-container">
+                <div class="cards-grid">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Email</h3>
+                        <p class="card-description">mhafidz1501@gmail.com</p>
+                        <a href="mailto:mhafidz1501@gmail.com" class="card-link">Send Email</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.8 4C5.7 4 4 5.7 4 7.8V16.2C4 18.3 5.7 20 7.8 20H16.2C18.3 20 20 18.3 20 16.2V7.8C20 5.7 18.3 4 16.2 4H7.8ZM17.25 5.75C17.94 5.75 18.5 6.31 18.5 7S17.94 8.25 17.25 8.25 16 7.69 16 7 16.56 5.75 17.25 5.75ZM12 7C14.76 7 17 9.24 17 12S14.76 17 12 17 7 14.76 7 12 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Instagram</h3>
+                        <p class="card-description">@acc_looted</p>
+                        <a href="https://www.instagram.com/acc.looted?igsh=OWNkOWo0Z25yNGJq" target="_blank" class="card-link">Follow Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Form -->
+        <section class="appointment-form-section">
+            <div class="content-container">
+                <div class="form-container">
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tattooType" class="form-label">Tattoo Style *</label>
+                            <select id="tattooType" name="tattooType" class="form-select" required>
+                                <option value="">Select a style</option>
+                                <option value="cyber-sigilism">Cyber Sigilism</option>
+                                <option value="blackwork">BlackWork</option>
+                                <option value="typography">Typography</option>
+                                <option value="custom">Custom Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="size" class="form-label">Approximate Size</label>
+                                <select id="size" name="size" class="form-select">
+                                    <option value="">Select size</option>
+                                    <option value="small">Small (2-4 inches)</option>
+                                    <option value="medium">Medium (4-6 inches)</option>
+                                    <option value="large">Large (6-10 inches)</option>
+                                    <option value="extra-large">Extra Large (10+ inches)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="placement" class="form-label">Placement</label>
+                                <input type="text" id="placement" name="placement" class="form-input" placeholder="e.g., forearm, shoulder, back">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="">Select budget range</option>
+                                <option value="under-500k">Under Rp 500,000</option>
+                                <option value="500k-1m">Rp 500,000 - 1,000,000</option>
+                                <option value="1m-2m">Rp 1,000,000 - 2,000,000</option>
+                                <option value="2m-5m">Rp 2,000,000 - 5,000,000</option>
+                                <option value="above-5m">Above Rp 5,000,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredDate" class="form-label">Preferred Date</label>
+                            <input type="date" id="preferredDate" name="preferredDate" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description" class="form-label">Describe Your Tattoo Idea *</label>
+                            <textarea id="description" name="description" class="form-textarea" rows="5" placeholder="Tell me about your tattoo idea, inspiration, style preferences, etc." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reference" class="form-label">Reference Images</label>
+                            <input type="file" id="reference" name="reference" class="form-file" multiple accept="image/*">
+                            <p class="form-help">Upload reference images if you have any (optional)</p>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="firstTattoo" name="firstTattoo" class="form-checkbox">
+                                <span class="checkbox-custom"></span>
+                                This is my first tattoo
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" class="form-checkbox" required>
+                                <span class="checkbox-custom"></span>
+                                I agree to the terms and conditions *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Request Appointment</span>
+                            <span class="btn-loading" style="display: none;">
+                                <svg class="loading-spinner" width="20" height="20" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="31.416" stroke-dashoffset="31.416">
+                                        <animate attributeName="stroke-dasharray" dur="2s" values="0 31.416;15.708 15.708;0 31.416" repeatCount="indefinite"/>
+                                        <animate attributeName="stroke-dashoffset" dur="2s" values="0;-15.708;-31.416" repeatCount="indefinite"/>
+                                    </circle>
+                                </svg>
+                                Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-container success-modal">
+            <div class="modal-content">
+                <div class="success-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#10B981"/>
+                        <path d="M9 12L11 14L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h2 class="success-title">Appointment Request Sent!</h2>
+                <p class="success-message">
+                    Thank you for your appointment request. I'll review your information and get back to you within 24 hours via email or Instagram.
+                </p>
+                <button class="success-btn" id="closeSuccessModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="modal-overlay" id="errorModal">
+        <div class="modal-container error-modal">
+            <div class="modal-content">
+                <div class="error-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#EF4444"/>
+                        <path d="M15 9L9 15M9 9L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h2 class="error-title">Something went wrong</h2>
+                <p class="error-message" id="errorMessage">
+                    There was an error sending your appointment request. Please try again or contact me directly via Instagram.
+                </p>
+                <button class="error-btn" id="closeErrorModal">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <span class="social-label">Instagram</span>
+                <a href="https://www.instagram.com/acc.looted?igsh=OWNkOWo0Z25yNGJq" target="_blank" class="social-link">@acc_looted</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="appointment.js"></script>
+</body>
+</html>
